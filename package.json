@@ -6,7 +6,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:prod": "node server.js"
+    "start:prod": "node server.js",
+    "build": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
