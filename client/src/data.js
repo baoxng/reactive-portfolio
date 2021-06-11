@@ -46,5 +46,5 @@ export default{
                 url: "https://the-breakroom.herokuapp.com/",
               }
 
-    ]  
+    ]
 }

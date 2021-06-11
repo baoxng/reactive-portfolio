@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <Container fluid>
       <Row>
-      <Col size="md-6 sm-12">
+      <Col size="md-12 sm-12">
           <Contact />
         </Col>
       </Row>
