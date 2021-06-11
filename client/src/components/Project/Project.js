@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Row, Media } from 'reactstrap';
 import { NavLink } from "react-router-dom";
-import './App.css';
+// import './App.css';
 
 
 const Project = () => {

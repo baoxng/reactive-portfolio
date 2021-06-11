@@ -1,5 +1,5 @@
 import React from "react";
-import {Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Container} from "reactstrap";
 
 //import components
@@ -16,6 +16,7 @@ import Contact from "./components/Contact/Contact";
 const App=()=>{
   return(
     <Router>
+      <div id= "app" className="d-flex-column h-100">
       <Header/>
       <NavBar/>
       <Container>
@@ -26,6 +27,7 @@ const App=()=>{
         </Switch>
       </Container>
       <Footer/>
+      </div>
     </Router>
   )
 }
