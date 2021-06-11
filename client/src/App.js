@@ -1,34 +1,35 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {Container} from "reactstrap";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Detail from "./pages/Detail";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
+import FavoritesList from "./pages/FavoritesList";
+import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Project from "./components/Project";
 
-//import components
-import Header from "./components/Header/Header";
-import NavBar from "./components/Nav/NavBar";
-import Project from "./components/Project/Project";
-import Profile from "./components/Profile/Profile";
-import Footer from "./components/Footer/Footer";
-import Contact from "./components/Contact/Contact";
-//import styles
-
-
-
-const App=()=>{
-  return(
+function App() {
+  return (
     <Router>
-      <div id= "app" className="d-flex-column h-100">
-      <Header/>
-      <NavBar/>
-      <Container>
+      <div>
+        <Header/>
+        <Nav />
         <Switch>
-          <Route path="/" exact component={Profile}/>
-          <Route path="/project" exact component={Project}/>
-          <Route path="/contact" exact component={Contact}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/favorites" component={FavoritesList} />
+          <Route exact path="/posts/:id" component={Detail} />
+          <Route exact path="/project" component={Project}/>
+          <Route exact path="/contact" component={ContactPage}/>
+          {/* <Route exact path="/resume" component={}/> */}
+          <Route component={NoMatch} />
         </Switch>
-      </Container>
-      <Footer/>
+        <Footer/>
       </div>
     </Router>
-  )
+  );
 }
+
 export default App;
