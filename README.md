@@ -4,7 +4,7 @@
 
 Welcome! XNpaus Portfolio is a project that I would like to get personal with. This project challenged me to see if I can implement react.js for a website that I create about me. There's certain elements that I had to incorporate into the website, like making a navigation bar and having a link take me to another webpage. I also learned how to use columns and grids to make my bio card. I would say react is a different platform, so this project was more challenging to say the least.
 
-Click on here to go to the [live link](https://baoxng.github.io/XNpaus-Portfolio/).
+Click on here to go to the [live link](https://npaus-portfolio.herokuapp.com/profile).
 
 ## Installation 
 
